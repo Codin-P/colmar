@@ -423,7 +423,79 @@ body {
 }
 
 .exhibits h2 {
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 2rem;
+  margin-right: 1.5rem;
+}
+
+.exhibits-wrapper {
+  display: flex;
+  text-align: left;
+}
+
+.exhibits-video {
+  width: 60%;
+}
+
+video {
+  max-width: 100%;
+}
+
+.exhibits-sub {
+  padding-left: 1.5rem;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.exhibit {
+  display: flex;
+  flex-direction: row;
+  padding-block: 1rem;
+}
+
+.exhibit:first-of-type {
+  background-color:#d8d8d8
+}
+
+.exhibit h4 {
+  font-size: 1.45rem;
+}
+
+.exhibit img {
+  max-width: 35%;
+  display: block;
+}
+
+.exhibit-text {
+  padding-left: 1rem;
+  width: 65%;
+}
+
+/* Exhibit Mobile */
+
+@media (max-width: 700px) {
+
+  .exhibits {
+    padding: 0;
+  }
+
+  .exhibits h2 {
+    margin-right: 0;
+  }
+
+  .exhibits-sub {
+    display :none;
+  }
+
+  .exhibits-video {
+    width: 100%;
+  }
+
+  .exhibits-video h3,
+  .exhibits-video p {
+    display: none;
+  }
 }
 
 
