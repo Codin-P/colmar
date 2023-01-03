@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 0 2rem;
   box-sizing: border-box;
   font-family: 'Noto Sans', sans-serif;
   color:#4a4a4a;
@@ -7,7 +7,7 @@ body {
 
 /* HEADER */
 
-/* header desktop */
+/* Header Desktop */
 
 .header-mobile {
   display: none;
@@ -51,7 +51,7 @@ body {
   cursor: pointer;
 }
 
-/* header mobile */
+/* Header Mobile */
 
 @media (max-width: 700px) {
 
@@ -328,6 +328,104 @@ body {
   }
 
 }
+
+/* LEARNING */
+
+/* Learning Desktop */
+
+.learning-mobile {
+  display: none;
+}
+
+.learning-desktop {
+  background-color:#d8d8d8;
+  text-align: center;
+  padding: 2rem 4.5rem;
+}
+
+.learning-desktop h3 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.course-details {
+  padding-inline: 1rem;
+}
+
+.courses img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.course {
+  text-align: left;
+  background-color: white;
+}
+
+/* Learning Mobile */
+
+@media (max-width: 700px) {
+
+  .learning-desktop {
+    display: none;
+  }
+
+  .learning-mobile {
+    display: block;
+    text-align: center;
+  }
+
+  .courses-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .courses-mobile li {
+    margin: 0;
+    width: 90%;
+  }
+  .courses-mobile li a {
+    font-weight: bolder;
+    text-align: left;
+    border-radius: 0.2em;
+    display: block;
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+    background-color:#d8d8d8;
+    color:#4a4a4a;
+    width: 90%;
+    
+  }
+}
+
+/* EXHIBITS */
+
+/* Exhibits Desktop */
+
+.exhibits {
+  text-align: center;
+  background-color: #f3f5f5;
+  padding-block: 2rem;
+  padding-left: 1.5rem;
+}
+
+.exhibits h2 {
+  margin: 0;
+}
+
 
 
 /* FOOTER */
