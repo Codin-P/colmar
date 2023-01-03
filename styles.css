@@ -1,0 +1,302 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans', sans-serif;
+  color:#4a4a4a;
+}
+
+/* HEADER */
+
+/* header desktop */
+
+.header-mobile {
+  display: none;
+}
+
+.header-desktop {
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+}
+
+
+.logo-wrapper {
+  display: flex;
+  font-weight: bold;
+}
+.logo-wrapper p {
+  letter-spacing: 0.05rem;
+}
+
+.logo-wrapper span {
+  font-weight: initial;
+  color: #9b9b9b;
+}
+
+.header-desktop ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.header-desktop li {
+  padding-left: 1rem;
+}
+
+.header-desktop li a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* header mobile */
+
+@media (max-width: 700px) {
+
+  .header-desktop {
+    display: none;
+  }
+
+  .header-mobile {
+    display: block;
+    height: 4rem;
+    padding-inline: 2rem;
+  }
+
+  .header-mobile nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .header-mobile li {
+    padding-left: 0;
+  }
+
+  .header-mobile img {
+    width: 2.25rem;
+  }
+
+  .header-mobile img:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+
+}
+
+/* INTRO SECTION */
+
+/* Intro Desktop */
+
+  .intro {
+    display: flex;
+    padding: 2rem 1.5rem;
+    background-color: #d8d8d8;
+  }
+
+  .intro-pic-wrapper {
+    width: 60%;
+    display: flex;
+    padding-right: 1.5rem;
+  }
+
+  .intro-pic-wrapper img {
+    max-width: 100%;
+    display: block;
+  }
+
+  .intro-text {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .intro-text h2 {
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .intro-text p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .start-btn {
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 0.1rem;
+    background-color:#4a4a4a;
+    color: white;
+    width: 100%;
+    padding-block: 0.5rem;
+  }
+
+  .start-btn:hover {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  /* Intro Mobile */
+
+@media (max-width: 700px) {
+
+  .intro {
+    flex-direction: column;
+    padding: 0;
+    font-size: 60%;
+    padding-bottom: 2rem;
+  }
+
+  .intro-pic-wrapper {
+    width: 100%;
+  }
+
+  .intro-text {
+    width: 90%;
+    padding-inline: 1rem;
+  }
+
+  .intro-text h2 {
+    font-size: 1.5rem;
+  }
+  
+  .intro-text p {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+
+}
+
+/* FACTS */
+
+/* Facts Desktop */
+
+.facts {
+  background-color: #f3f5f5;
+  display: flex;
+  /* padding-block: 2rem; */
+  padding-left: 1.5rem;
+}
+
+.facts-pic-wrapper {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding-block: 2rem;
+  padding-right: 1.5rem;
+  border-right: 0.125rem solid #d8d8d8;
+}
+
+.facts-pic-wrapper img {
+  width: 100%;
+  display: block;
+}
+
+.facts-pic-wrapper h3 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.facts-pic-wrapper p {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.sub-facts-wrapper {
+  padding-top: 2rem;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-fact {
+  display: flex;
+  padding: 1rem;
+}
+
+.sub-fact:first-of-type {
+  padding-top: 0;
+  border-bottom: 0.1rem solid #d8d8d8;
+}
+
+.sub-fact:last-of-type {
+  background-color: #d8d8d8;
+}
+
+.sub-fact-image-wrapper {
+  width: 35%;
+  margin-right: 1rem;
+}
+
+.sub-fact-image-wrapper img {
+  max-width: 100%;
+  display: block;
+}
+
+.sub-fact-data {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sub-fact-data h4 {
+  font-size: 1.3rem;
+}
+
+.sub-fact-data > * {
+  margin: 0;
+}
+
+.sub-fact-data p {
+  margin-block: 0.5rem;
+}
+
+.sub-fact-data a {
+  color: #306fb8;
+}
+
+/* Facts Mobile */
+
+@media (max-width: 700px) {
+
+  .facts-pic-wrapper {
+    display: none;
+  }
+
+}
+
+
+/* FOOTER */
+
+/* Footer Desktop */
+
+footer {
+  padding-inline: 1.5rem;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer li {
+  display: inline-block;
+  padding-left: 1.25rem;
+}
+
+/* Footer Mobile */
+
+@media (max-width: 700px) {
+  footer ul {
+    display: none;
+  }
+}
